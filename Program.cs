@@ -1,49 +1,54 @@
 ﻿using System;
 
-//Composite Formatting 
-// string first = "Hello";
-// string second = "World";
-// Console.WriteLine("{1} {0}!", first, second);
-// Console.WriteLine("{0} {0} {0}!", first, second);
-// Console.WriteLine("\n\n");
+// string message = "Find what is (inside the parentheses)";
 
-//String interpolation
-// string first = "Hello";
-// string second = "World";
-// Console.WriteLine($"{first} {second}!");
-// Console.WriteLine($"{second} {first}!");
-// Console.WriteLine($"{first} {first} {first}!");
+// int openingPosition = message.IndexOf('(');
+// int closingPosition = message.IndexOf(')');
 
-//Formatting currncy
+// Console.WriteLine(openingPosition);
+// Console.WriteLine(closingPosition);
 
-// decimal price = 123.45m;
-// int discount = 50;
-// Console.WriteLine($"Price: {price:C} (Save {discount:C})");
-// Console.WriteLine("\n\n");
+// string message = "Find what is (inside the parentheses)";
 
+// int openingPosition = message.IndexOf('(');
+// int closingPosition = message.IndexOf(')');
 
-//Formating numbers 
+// Console.WriteLine(openingPosition);
+// Console.WriteLine(closingPosition);
 
-decimal measurement = 123456.78912m;
-Console.WriteLine($"Measurement: {measurement:N} units\n");
+// int length = closingPosition - openingPosition;
+// Console.WriteLine(message.Substring(openingPosition, length));
 
-decimal measurement2 = 123456.78912m;
-Console.WriteLine($"Measurement: {measurement2:N4} units\n\n");
+// string message = "What is the value <span>between the tags</span>?";
 
+// int openingPosition = message.IndexOf("<span>");
+// int closingPosition = message.IndexOf("</span>");
 
-//Formating percentages 
-decimal tax = .36785m;
-Console.WriteLine($"Tax rate: {tax:P2}");
+// openingPosition += 6;
+// int length = closingPosition - openingPosition;
+// Console.WriteLine(message.Substring(openingPosition, length));
 
-decimal price = 67.55m;
-decimal salePrice = 59.99m;
+string message = "Help (find) the {opening symbols}";
+Console.WriteLine($"Searching THIS Message: {message}");
+char[] openSymbols = { '[', '{', '(' };
+int startPosition = 5;
+int openingPosition = message.IndexOfAny(openSymbols);
+Console.WriteLine($"Found WITHOUT using startPosition: {message.Substring(openingPosition)}");
 
-string yourDiscount = String.Format("You saved {0:C2} off the regular {1:C2} price. ", (price - salePrice), price);
+openingPosition = message.IndexOfAny(openSymbols, startPosition);
+Console.WriteLine($"Found WITH using startPosition {startPosition}:  {message.Substring(openingPosition)}");
 
-yourDiscount += $"A discount of {((price - salePrice) / price):P2}!"; //inserted
-Console.WriteLine(yourDiscount);
+// LastIndexOf() returns the last position of a character or string inside of another string.
+// IndexOfAny() returns the first position of an array of char that occurs inside of another string.
 
-string input = "Pad this";
-Console.WriteLine(input.PadLeft(12));
-Console.WriteLine(input.PadLeft(12, '-'));
-Console.WriteLine(input.PadRight(12, '-'));
+string data = "12345John Smith          5000  3  ";
+string updatedData = data.Remove(5, 20);
+Console.WriteLine(updatedData);
+
+string message2 = "This--is--ex-amp-le--da-ta";
+message2 = message2.Replace("--", " ");
+message2 = message2.Replace("-", "");
+Console.WriteLine(message2);
+
+// The Remove() method works like the Substring() method, except that it deletes the specified characters in the string.
+// The Replace() method swaps all instances of a string with a new string.
