@@ -1,0 +1,14 @@
+/home/omen/Documents/CsharpProjects/TestProject/bin/Debug/net8.0/TestProject
+/home/omen/Documents/CsharpProjects/TestProject/bin/Debug/net8.0/TestProject.deps.json
+/home/omen/Documents/CsharpProjects/TestProject/bin/Debug/net8.0/TestProject.runtimeconfig.json
+/home/omen/Documents/CsharpProjects/TestProject/bin/Debug/net8.0/TestProject.dll
+/home/omen/Documents/CsharpProjects/TestProject/bin/Debug/net8.0/TestProject.pdb
+/home/omen/Documents/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.GeneratedMSBuildEditorConfig.editorconfig
+/home/omen/Documents/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.AssemblyInfoInputs.cache
+/home/omen/Documents/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.AssemblyInfo.cs
+/home/omen/Documents/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.csproj.CoreCompileInputs.cache
+/home/omen/Documents/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.dll
+/home/omen/Documents/CsharpProjects/TestProject/obj/Debug/net8.0/refint/TestProject.dll
+/home/omen/Documents/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.pdb
+/home/omen/Documents/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.genruntimeconfig.cache
+/home/omen/Documents/CsharpProjects/TestProject/obj/Debug/net8.0/ref/TestProject.dll
